@@ -26,7 +26,7 @@ connection.close()
 
 # Subir el archivo CSV a S3
 s3 = boto3.client('s3')
-bucket_name = 'your-s3-bucket-name'
+bucket_name = 'fb-output02'
 s3.upload_file('output.csv', bucket_name, 'output.csv')
 
 print("Archivo CSV subido a S3 correctamente.")
